@@ -3,5 +3,12 @@
    xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-   <bean id="alien" class="com.kintan.spring_demo.Alien"></bean> 
+   <bean id="alien" class="com.kintan.spring_demo.Alien">
+   <constructor-arg value="25"></constructor-arg>
+   
+   <property name="laptop" ref="laptop"></property>
+   </bean>
+   
+   <bean id="laptop" class="com.kintan.spring_demo.laptop">
+   </bean>
    </beans>	

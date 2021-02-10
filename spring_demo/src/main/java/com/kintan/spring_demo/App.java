@@ -16,8 +16,14 @@ public class App
     {
    	ApplicationContext factory=new ClassPathXmlApplicationContext("spring.xml");
    //BeanFactory factory= new XmlBeanFactory(new FileSystemResource("spring.xml")); //use to get object
-    	Alien obj=(Alien)factory.getBean("alien");
-    	obj.show();
-        
+    	
+   		Alien obj1=(Alien)factory.getBean("alien");
+   		obj1.show();
+//    	System.out.println(obj1.age);
+//    	Alien obj2=(Alien)factory.getBean("alien");
+//    	
+    	System.out.println(obj1.age);
+    	
+
     }
 }
